@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>¿Qué te gustaría calcular?</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <h2>Seleccione Figura Geométrica</h2>
+
+      <ion-item lines="none">
+
+        <ion-label position="stacked">Figura</ion-label>
+
+        <ion-select interface="popover" placeholder="Seleccione Figura Geométrica" (ionChange)="manejarSeleccionFiguras($event)">
+          <ion-select-option value="circulo">Circulo</ion-select-option>
+          <ion-select-option value="triangulo escaleno">Triangulo Escaleno</ion-select-option>
+          <ion-select-option value="triangulo equilatero">Triangulo Equilatero</ion-select-option>
+        </ion-select>
+
+      </ion-item>
+        
+        <app-circulo *ngIf="esCirculo()"></app-circulo>
+        <app-triangulo *ngIf="esTrianguloEscaleno()" [tipo]="'triangulo_escaleno'"></app-triangulo>
+        <app-triangulo *ngIf="esTrianguloEquilatero()" [tipo]="'triangulo_equilatero'"></app-triangulo>
+  
+</ion-content>

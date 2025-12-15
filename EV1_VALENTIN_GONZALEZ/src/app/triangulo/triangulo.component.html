@@ -1,0 +1,57 @@
+<ion-list>
+  <!--'triangulo_escaleno' -->
+  <div *ngIf="tipo === 'triangulo_escaleno'">
+    <h2>¡Calcula el perímetro del triángulo escaleno!</h2>
+    <p>Para hacer el calculo, necesitaremos las medidas de sus tres lados.</p>
+    <ion-card class="image-card">
+      <ion-img src="assets/img/Triangulo_escaleno.png" class="centered-image"></ion-img>
+    </ion-card>
+
+    <ion-item>
+      <ion-input [(ngModel)]="ladoAStr" type="number" label="Ingrese Lado A(cm)" 
+                 label-placement="floating"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="ladoBStr" type="number" label="Ingrese Lado B(cm)" 
+                 label-placement="floating" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="ladoCStr" type="number" label="Ingrese Lado C(cm)" 
+                 label-placement="floating" ></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button (click)="calcularPerimetroEscaleno()">Hacer calculo</ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      {{resultadoEs}}
+    </ion-item>
+  </div>
+
+  <!--'triangulo_equilatero' -->
+
+  
+    <div *ngIf="tipo === 'triangulo_equilatero'" >
+      <h2>¡Calcula el perímetro del triángulo equilátero!</h2>
+      <p>Para hacer el calculo, necesitaremos la medida de un solo lado.</p>
+
+      <ion-card class="image-card">
+        <ion-img src="assets/img/Triangulo_equilatero.png" class="centered-image"></ion-img>
+      </ion-card>
+
+      <ion-item>
+        <ion-input [(ngModel)]="ladoStr" type="number" label="Ingrese Lado(cm)" 
+                  label-placement="floating"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-button (click)="calcularPerimetroEquilatero()">Hacer calculo</ion-button>
+      </ion-item>
+
+      <ion-item lines="none">
+        {{resultadoEq}}
+      </ion-item>
+    </div>
+</ion-list>

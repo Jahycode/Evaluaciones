@@ -1,0 +1,26 @@
+ion-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  gap: 16px;
+}
+
+.select-item {
+  width: min(420px, 100%);
+}
+
+ion-select {
+  width: 100%;
+}
+
+ion-select::part(text),
+ion-select::part(placeholder) {
+  white-space: normal;
+}
+ion-title{
+  font-size: larger;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.centered-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}

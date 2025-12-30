@@ -1,0 +1,7 @@
+{
+  "name": "VALENTIN_GONZALEZ_EV2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

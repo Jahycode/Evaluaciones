@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Configuración</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Configuración</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h2>Permitir borrar citas en inicio</h2>
+        <p>Habilita la opción de eliminar citas desde la página principal</p>
+      </ion-label>
+      <ion-toggle 
+        [checked]="configuracion.puedeBorrarCitasEnInicio"
+        (ionChange)="onToggleChange($event)">
+      </ion-toggle>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-list>
+  <ion-item *ngIf="cita.frase">
+    <ion-label class="ion-text-wrap">
+      <h2>"{{ cita.frase }}"</h2>
+      <p>- {{ cita.autor }}</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item *ngIf="!cita.frase">
+    <ion-label>
+      <p>No hay citas disponibles</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+<div clas="actions">
+  <ion-button
+  size="small"
+  color="primary"
+  (click)="refrescarCita()">
+    <ion-icon slot="start" name="refresh-outline"></ion-icon>
+    Nueva Cita
+  </ion-button>
+  
+  <ion-button 
+    *ngIf="puedeBorrar && cita.id" 
+    size="small"
+    color="danger" 
+    (click)="eliminarCita()">
+    <ion-icon slot="start" name="trash-outline"></ion-icon>
+    Eliminar
+  </ion-button>
+</div>

@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Frase del día
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/gestion-citas">
+        <ion-icon name="list-outline"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/pagina-configuracion">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Agregar [key] para forzar recreación -->
+  <app-contenedor-citas [attr.data-key]="componentKey"></app-contenedor-citas>
+</ion-content>

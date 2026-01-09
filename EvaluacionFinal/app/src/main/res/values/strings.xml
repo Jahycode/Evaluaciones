@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name" translatable="false">VALENTIN_GONZALEZ_EVF</string>
+
+    <!-- LISTADO -->
+    <string name="titulo_listado">Listado de Mediciones</string>
+    <string name="sin_mediciones">No hay mediciones registradas</string>
+    <string name="agregar_medicion">Agregar medición</string>
+
+    <!-- FORMULARIO -->
+    <string name="nueva_medicion">Nueva Medición</string>
+    <string name="guardar">Guardar</string>
+    <string name="volver">Volver</string>
+
+    <!-- DATOS -->
+    <string name="categoria">Categoría</string>
+    <string name="lectura">Lectura</string>
+    <string name="fecha">Fecha (yyyy-MM-dd)</string>
+
+    <!-- VALIDACION -->
+    <string name="solo_numeros">Ingrese solo números</string>
+
+    <!-- CATEGORIAS -->
+    <string name="agua">Agua</string>
+    <string name="luz">Luz</string>
+    <string name="gas">Gas</string>
+</resources>

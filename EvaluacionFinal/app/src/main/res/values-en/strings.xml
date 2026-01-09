@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">VALENTIN_GONZALEZ_EVF</string>
+
+    <!-- LISTADO -->
+    <string name="titulo_listado">Measurements List</string>
+    <string name="sin_mediciones">No measurements registered</string>
+    <string name="agregar_medicion">Add measurement</string>
+
+    <!-- FORMULARIO -->
+    <string name="nueva_medicion">New Measurement</string>
+    <string name="guardar">Save</string>
+    <string name="volver">Back</string>
+
+    <!-- DATOS -->
+    <string name="categoria">Category</string>
+    <string name="lectura">Reading</string>
+    <string name="fecha">Date (yyyy-MM-dd)</string>
+
+    <!-- VALIDACION -->
+    <string name="solo_numeros">Numbers only</string>
+
+    <!-- CATEGORIAS -->
+    <string name="agua">Water</string>
+    <string name="luz">Electricity</string>
+    <string name="gas">Gas</string>
+</resources>

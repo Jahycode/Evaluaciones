@@ -1,0 +1,32 @@
+
+<ion-item class="aviso-item">
+  <div class="aviso-left">
+    <small class="aviso-fecha">
+      {{ aviso.fechaCreacion | date:'yyyy/MM/dd' }}
+    </small>
+
+    <h2 class="aviso-titulo">
+      {{ aviso.titulo }}
+    </h2>
+
+    <p class="aviso-descripcion">
+      {{ aviso.descripcion }}
+    </p>
+  </div>
+
+  <div class="aviso-right" *ngIf="aviso.fotoBase64">
+    <img
+      [src]="aviso.fotoBase64"
+      class="aviso-img"
+    />
+  </div>
+
+  <ion-button
+    color="danger"
+    fill="clear"
+    (click)="solicitarEliminar()"
+    class="btn-trash"
+    >
+    <ion-icon name="trash" class="icon-trash"></ion-icon>
+  </ion-button>
+</ion-item>

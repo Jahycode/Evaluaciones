@@ -1,0 +1,56 @@
+.aviso-item {
+
+  margin: 6px 8px;
+  border-radius: 8px;
+  background: #1c1c1c;
+  box-shadow: none;
+  border: 1px solid #2a2a2a;
+  
+}
+
+.aviso-left {
+  flex: 1;
+}
+
+.aviso-fecha {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.aviso-titulo {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aviso-descripcion {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.aviso-right {
+  flex-shrink: 0;
+}
+
+.aviso-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.btn-trash {
+  align-self: center;
+  margin-left: 8px;
+
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+
+  min-width: 36px;  
+  min-height: 36px;
+}
+
+.icon-trash {
+  font-size: 22px; 
+}
